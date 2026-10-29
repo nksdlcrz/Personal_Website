@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photo Gallery 📸</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>📸 My Gallery📸</h1> 
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropbtn">About Me ▾</a>
+        <div class="dropdown-content">
+          <a href="skills.html">My Crafts & Skills</a>
+          <a href="goals.html">My Goals</a>
+          <a href="funfacts.html">Fun Facts</a>
+        </div>
+      </li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="login.html" class="logout-button">LOG OUT</a></li>
+    </ul>
+  </nav>
+
+  <div id="lightbox" class="lightbox">
+    <span class="close" onclick="closeLightbox()">×</span>
+    <a class="prev" onclick="changeImage(-1)">❮</a>
+    <img class="lightbox-content" id="lightboxImage" alt="Enlarged view">
+    <a class="next" onclick="changeImage(1)">❯</a>
+  </div>
+
+  <section id="gallery">
+    <h2>🌸 My family 🌸</h2>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="Images/familiy.jpg" alt="My family is my strength" class="thumbnail">
+        <p class="image-description">My Family, my inspiration 💗</p>
+      </div>
+      <div class="gallery-item">
+        <img src="Images/family1.jpg" alt="Famiiess" class="thumbnail">
+        <p class="image-description">Family is where my story begins and love never ends.💗</p>
+      </div>
+      <div class="gallery-item">
+        <img src="Images/family2.jpeg" alt="Love made our family" class="thumbnail">
+        <p class="image-description">Last year Christmass💗</p>
+      </div>
+      <div class="gallery-item">
+        <img src="Images/family3.jpeg" alt="Birthday" class="thumbnail">
+        <p class="image-description">Celebrating my sister's birthday💗</p>
+      </div>
+    </div>
+
+    <h2>💖 My Partner in Crime 💖</h2>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="Images/us.jpeg" alt="after training" class="thumbnail">
+        <p class="image-description">Finally home after 1 month of training. I missed you so much💗</p>
+      </div>
+      <div class="gallery-item">
+        <img src="Images/us3.jpeg" alt="patnongon" class="thumbnail">
+        <p class="image-description">Dreamy sunset by the water with you🌅</p>
+      </div>
+      <div class="gallery-item">
+        <img src="Images/us2.jpg" alt="handmade flowers" class="thumbnail">
+        <p class="image-description">Bouquets made by us, with love.💗</p>
+      </div>
+      <div class="gallery-item">
+        <img src="Images/us4.jpeg" alt="celebrating" class="thumbnail">
+        <p class="image-description">Celebrating our first year together💗</p>
+      </div>
+    </div>
+
+    <h2>💖Me and My Friends 💖</h2>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="Images/friends.jpg" alt="celebrating" class="thumbnail">
+        <p class="image-description">Best days are spent with favorite people 🎂💛</p>
+      </div>
+      <div class="gallery-item">
+        <img src="Images/friends2.jpeg" alt="the 4 of us" class="thumbnail">
+        <p class="image-description">The 4 of us!</p>
+      </div>
+      <div class="gallery-item">
+        <img src="Images/friends1.jpg" alt="tripple A" class="thumbnail">
+        <p class="image-description">Being silly together is our favorite thing</p>
+      </div>
+      <div class="gallery-item">
+        <img src="Images/friends3.jpeg" alt="my besties" class="thumbnail">
+        <p class="image-description">Nature’s beauty + best company = perfect day</p>
+      </div>
+      <div class="gallery-item">
+        <img src="Images/friends4.jpeg" alt="the 2 of us" class="thumbnail">
+        <p class="image-description">With my kaye</p>
+      </div>
+      <div class="gallery-item">
+        <img src="Images/friends5.jpeg" alt="p.e time" class="thumbnail">
+        <p class="image-description">School days with friends</p>
+      </div>
+      <div class="gallery-item">
+        <img src="Images/friends6.jpeg" alt="Waterfall" class="thumbnail">
+        <p class="image-description"> Every one of you is a gift</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="footer-divider"></div>
+  <footer>
+    <p>🌸© 2026 Niks - All rights reserved. 🌸 Made with love & nature's inspiration.🌸</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

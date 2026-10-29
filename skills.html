@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Crafts & Skills 💐</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>💐 My Crafts & Skills — What I Love to Create 💐</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropbtn">About Me ▾</a>
+        <div class="dropdown-content">
+          <a href="skills.html">My Crafts & Skills</a>
+          <a href="goals.html">My Goals</a>
+          <a href="funfacts.html">Fun Facts</a>
+        </div>
+      </li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="login.html" class="logout-button">LOG OUT</a></li>
+    </ul>
+  </nav>
+
+  <section id="skills">
+    <h2>✨ My Creative Skills ✨</h2>
+
+    <div class="tab">
+      <button class="tablinks active" onclick="openTab(event, 'satin')">🌷 Satin Flowers</button>
+      <button class="tablinks" onclick="openTab(event, 'wire')">🌿 Fuzzy Wire Art</button>
+      <button class="tablinks" onclick="openTab(event, 'painting')">🎨 Paintings</button>
+      <button class="tablinks" onclick="openTab(event, 'other')">💫 Other Skills</button>
+    </div>
+
+    <div id="satin" class="tabcontent" style="display:block;">
+      <h3>🌸 Handmade Satin Ribbon Flowers</h3>
+      <p>I create beautiful flowers using satin ribbons each petal is cut, shaped, and assembled by hand. It takes patience, but seeing them come to life makes it all worth it 💗</p>
+      <ul>
+        <li>🌹 Roses — classic & elegant</li>
+        <li>🌷 Tulips — soft & sweet</li>
+        <li>💐 Mixed bouquets — perfect gifts</li>
+      </ul>
+    </div>
+
+    <div id="wire" class="tabcontent">
+      <h3>🌿 Fuzzy Wire Flowers & Stems</h3>
+      <p>Fuzzy wire gives my creations that soft, realistic touch. I shape the stems, leaves, and details to make them look like they just came from the garden 💚</p>
+      <ul>
+        <li>Flexible, durable stems that hold shape beautifully</li>
+        <li>Custom colors to match any bouquet</li>
+        <li>Leaves & vines that add the perfect finishing touch</li>
+      </ul>
+    </div>
+
+    <div id="painting" class="tabcontent">
+      <h3>🎨 My Paintings</h3>
+      <p>When I'm not crafting, I pick up a brush. I love painting sunsets and finding calm in colors.💙</p>
+      <ul>
+        <li>Nature & landscape scenes golden sunsets and quite skies</li>
+        <li>Mini canvases & art journal pages, the little piece of my day</li>
+        <li>Soft pastels & dreamy color blends, where calm meets color</li>
+      </ul>
+    </div>
+
+    <div id="other" class="tabcontent">
+      <h3>💫 More Things I Love Doing</h3>
+      <ul>
+        <li>📷 Photography — capturing nature & precious moments</li>
+        <li>🏊 Exploring beautiful pools & waterfalls</li>
+        <li>🍳 Cooking my favorite foods</li>
+        <li>🎵 Listening to music while I create</li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="footer-divider"></div>
+  <footer>
+    <p>🌸© 2026 Niks - All rights reserved. 🌸 Made with love & nature's inspiration.🌸</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

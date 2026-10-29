@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Goals & Dreams 💫</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>💫 My Goals & Dreams 💫</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropbtn">About Me ▾</a>
+        <div class="dropdown-content">
+          <a href="skills.html">My Crafts & Skills</a>
+          <a href="goals.html">My Goals & Dreams</a>
+          <a href="funfacts.html">Fun Facts</a>
+        </div>
+      </li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="login.html" class="logout-button">LOG OUT</a></li>
+    </ul>
+  </nav>
+
+  <section>
+    <h2 class="goals-title">My Goals & Dreams 🌸</h2>
+    <p class="goals-subtitle">Keep chasing what makes you happy 💙</p>
+
+    <div class="goals-container">
+      <div class="goals-grid">
+        <div class="goal-card" onclick="openGoalModal(1)">
+          <h3>💐 My Own Flower Shop</h3>
+          <p>A little shop bursting with blooms, every bouquet made with love, every flower bringing joy to others. My dreams growing, blooming, thriving right here 💗</p>
+        </div>
+
+        <div class="goal-card" onclick="openGoalModal(2)">
+          <h3>🎨 Grow as an Artist</h3>
+          <p>I want to learn more painting techniques and create a collection of art that reflects how I see the world soft, colorful, and full of beauty 💜</p>
+        </div>
+
+        <div class="goal-card" onclick="openGoalModal(3)">
+          <h3>Learn to Code!</h3>
+          <p>Started from handmade bouquets, now learning to build my own website. From crafting with hands to crafting with code, growing as an artist in every way!</p>
+        </div>
+
+        <div class="goal-card" onclick="openGoalModal(4)">
+          <h3>🏡 My Dream House</h3>
+          <p>A warm, cozy place truly mine filled with sunlight, flowers, and all the things I love. A home where I feel safe, happy, and completely at peace 🌸</p>
+        </div>
+
+        <div class="goal-card" onclick="openGoalModal(5)">
+          <h3>🚗 My Own Car</h3>
+          <p>One day I’ll drive my own car windows down, heart full, going wherever my heart leads me. Every road trip will be my own beautiful adventure 💜</p>
+        </div>
+
+        <div class="goal-card" onclick="openGoalModal(6)">
+          <h3>💰 Financial Stability</h3>
+          <p>Build a secure, steady future where I can support myself, chase every dream without worry, and share blessings with the people I love. Peace of mind, always 💙</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="goalOverlay" onclick="closeGoalModal()"></div>
+  <div id="goalModal">
+    <span class="close-btn" onclick="closeGoalModal()">×</span>
+    <img id="modalImage" src="" alt="Dream picture">
+    <h3 id="modalTitle"></h3>
+    <p id="modalText"></p>
+  </div>
+
+  <div class="footer-divider"></div>
+  <footer>
+    <p>🌸© 2026 Niks - All rights reserved. 🌸 Made with love & nature's inspiration.🌸</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

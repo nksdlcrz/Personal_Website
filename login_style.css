@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', Century, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+/* Background Video */
+.video-bg {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  z-index: -2;
+  overflow: hidden;
+}
+.video-bg video {
+  width: 100%; height: 100%;
+  object-fit: cover;
+}
+.video-overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(15, 43, 72, 0.65);
+}
+/* Message Box */
+.msg-box {
+  position: fixed;
+  top: 20px; left: 50%;
+  transform: translateX(-50%);
+  padding: 14px 28px;
+  border-radius: 12px;
+  font-weight: 600;
+  z-index: 100;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+.msg-box.error {
+  background: #FEE2E2; color: #B91C1C; border: 2px solid #FCA5A5;
+}
+.msg-box.success {
+  background: #D1FAE5; color: #065F46; border: 2px solid #6EE7B7;
+}
+/* Form Container */
+.form-container {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 40px 35px;
+  border-radius: 20px;
+  box-shadow: 0 10px 35px rgba(15, 43, 72, 0.3);
+  width: 90%;
+  max-width: 420px;
+  backdrop-filter: blur(8px);
+}
+.form-container h2 {
+  text-align: center;
+  color: #0F2B48;
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+}
+.form-container h3 {
+  text-align: center;
+  color: #1E40AF;
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+}
+.form-container label {
+  display: block;
+  margin: 12px 0 6px;
+  color: #374151;
+  font-weight: 600;
+}
+.form-container input {
+  width: 100%;
+  padding: 13px 18px;
+  border: 2px solid #BFDBFE;
+  border-radius: 10px;
+  font-size: 15px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+.form-container input:focus {
+  outline: none;
+  border-color: #1E40AF;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+.show-password {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 12px 0;
+}
+.show-password input[type="checkbox"] {
+  width: auto;
+  margin: 0;
+}
+.show-password label {
+  margin: 0;
+  font-weight: normal;
+  color: #6B7280;
+}
+.form-container button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 18px;
+  background: linear-gradient(90deg, #0F2B48, #1E40AF);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.form-container button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(30, 64, 175, 0.35);
+}
+.switch-form {
+  text-align: center;
+  margin-top: 22px;
+  color: #6B7280;
+  font-size: 14px;
+}
+.switch-form a {
+  color: #1E40AF;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 4px;
+}
+.switch-form a:hover {
+  text-decoration: underline;
+}
+
+/* Keep ALL your existing CSS exactly as you provided it */
+/* Add this if missing — it's already in your version above */
+
+#errorMessage {
+    margin-top: 12px;
+    text-align: center;
+    font-weight: 600;
+}
+
+#passwordMatchMessage {
+    margin-top: 6px;
+    padding-left: 4px;
+}
